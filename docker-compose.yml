@@ -1,0 +1,16 @@
+web:
+  build: docker/local/nginx
+  ports :
+   - "8877:80"
+  volumes:
+   - .:/var/www/html/
+  links:
+   - database
+database:
+  image: mysql:latest
+  ports:
+   - "3308:3306"
+  environment:
+     - MYSQL_DATABASE=ceres
+     - MYSQL_USER=root
+     - MYSQL_ROOT_PASSWORD=c1j325kDA@#
