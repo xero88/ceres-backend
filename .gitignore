@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /app/bootstrap.php.cache
 /app/cache/*
 !app/cache/.gitkeep
@@ -11,6 +12,8 @@
 /vendor/
 /web/bundles/
 =======
+=======
+>>>>>>> 441e06f1d58d58f2d0d066f4ce98a4c92d46f59d
 # Cache and logs (Symfony2)
 /app/cache/*
 /app/logs/*
@@ -59,4 +62,7 @@
 
 # Backup entities generated with doctrine:generate:entities command
 */Entity/*~
+<<<<<<< HEAD
+>>>>>>> 441e06f1d58d58f2d0d066f4ce98a4c92d46f59d
+=======
 >>>>>>> 441e06f1d58d58f2d0d066f4ce98a4c92d46f59d
