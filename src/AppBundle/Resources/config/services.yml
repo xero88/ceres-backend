@@ -1,0 +1,11 @@
+services:
+    guzzle_client:
+        class:        GuzzleHttp\Client
+    app.marmiton.service:
+        class: AppBundle\Service\MarmitonService
+        calls:
+            - [setGuzzleClient, ['@guzzle_client']]
+    app.recipe.rest.controller:
+        class: AppBundle\Controller\RecipeController
+        calls:
+            - [setMarmitonService, ['@app.marmiton.service']]
