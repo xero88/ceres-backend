@@ -45,3 +45,4 @@
 /composer.phar
 
 /.idea/*
+/var/*
